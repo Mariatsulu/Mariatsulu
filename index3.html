@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flex-container{
+      display: flex;
+	  
+	  flex-flow: nowrap;
+    }
+	.column{
+		flex-direction: column;
+	}
+
+	.column-reverse{
+		flex-direction: column-reverse;
+	}
+	
+
+    .flex-item{
+      text-align: center;
+      font-size: 1em;
+      padding: 1.5em;
+      color: white;
+	  opacity: 0.8;
+    }
+	.group1{
+		order: -1;
+	}
+
+	.group2{
+		order: 1;
+	}
+    .color1{
+      background-color: aqua;
+    }
+
+    .color2{
+      background-color: red;
+    }
+    .color3{
+      background-color: green;
+    }
+
+    .color4{
+      background-color: orange;
+    }
+    .color5{
+      background-color: blue;
+    }
+
+
+  </style>
+</head>
+<body>
+	
+  <div class="flex-container">
+    <div class="flex-item color1">1</div>
+    <div class="flex-item color2 group2">2</div>
+    <div class="flex-item color3 group2">3</div>
+	<div class="flex-item color4">4</div>
+    <div class="flex-item color5 group1">5</div>
+  </div>
+ 
+</body>
+</html>
